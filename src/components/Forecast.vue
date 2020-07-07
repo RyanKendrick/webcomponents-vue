@@ -5,10 +5,10 @@
             <b-list-group-item>
                 <b>Date: {{l.dt_txt}}</b>
             </b-list-group-item>
-            </b-list-group-item>Temperature: {{l.main.temp - 273.15}} C</b-list-group-item>
-            </b-list-group-item>High: {{l.main.temp_max - 273.15}}</b-list-group-item>
-            </b-list-group-item>Low: {{l.main.temp_min}}mb</b-list-group-item>
-            </b-list-group-item>Pressure: {{l.main.pressure}}mb </b-list-group-item>
+            <b-list-group-item>Temperature: {{l.main.temp - 273.15}} C</b-list-group-item>
+            <b-list-group-item>High: {{l.main.temp_max - 273.15}} C</b-list-group-item>
+            <b-list-group-item>Low: {{l.main.temp_min}}mb</b-list-group-item>
+            <b-list-group-item>Pressure: {{l.main.pressure}}mb</b-list-group-item>
         </b-list-group>
     </div>
 </template>
