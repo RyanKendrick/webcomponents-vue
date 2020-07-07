@@ -22,7 +22,7 @@ export default {
     store,
     name: "CurrentWeather",
     mounted() {},
-    mixins: [requestMixin],
+    mixins: [requestsMixin],
     components: {
         BListGroup,
         BListGroupItem
@@ -39,7 +39,7 @@ export default {
     },
     watch: {
         async keyword(val) {
-            const = response = await this.searchWeather(val);
+            const response = await this.searchWeather(val);
             this.weather = response.data;
         }
     }
