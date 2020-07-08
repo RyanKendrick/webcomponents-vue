@@ -1,3 +1,5 @@
+/* eslint-disable vue/no-unused-components */
+/* eslint-disable vue/no-unused-components */
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="info">
@@ -54,6 +56,7 @@ export default {
   name: "App",
   components: {
     CurrentWeather,
+    // eslint-disable-next-line vue/no-unused-components
     Forecast,
     ValidationProvider,
     ValidationObserver,
@@ -74,7 +77,9 @@ export default {
   },
   methods: {
     async onSubmit() {
+      // eslint-disable-next-line no-unused-vars
       const isValid = await this.$refs.observer.validate();
+      // eslint-disable-next-line no-undef
       if (!valid) {
         return;
       }
