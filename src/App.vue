@@ -4,7 +4,7 @@
       <b-navbar-brand href="#">Weather App</b-navbar-brand>
     </b-navbar>
     <div class="page">
-      <ValidationObserver ref="observer" v-slot="{ invalid }">
+      <ValidationObserver ref="observer" v-slot="{}">
         <b-form @submit.prevent="onSubmit" novalidate>
           <b-form-group label="Keyword" label-for="keyword">
             <ValidationProvider name="keyword" rules="required" v-slot="{ errors }">
@@ -33,7 +33,7 @@
 <script>
 import CurrentWeather from "@/components/CurrentWeather.vue";
 import Forecast from "@/components/Forecast.vue";
-import store from "./store";
+import store from "./store.js";
 import {
   BTabs,
   BTab,
@@ -91,10 +91,4 @@ export default {
 };
 </script>
 
-<style lang="scss">  
-@import "./../node_modules/bootstrap/dist/css/bootstrap.css";  
-@import "./../node_modules/bootstrap-vue/dist/bootstrap-vue.css";  
-.page {  
-  padding: 20px;  
-}  
-</style>
+

@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import { requestsMixin } from "@/mixins/requestsMixin";  
+import { requestsMixin } from "@/mixins/mixins.js";  
 import store from "../store";  
 import { BListGroup, BListGroupItem } from "bootstrap-vue";  
 import 'bootstrap/dist/css/bootstrap.css'  
